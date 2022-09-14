@@ -48,10 +48,10 @@ Le FIN
   ```
   Exemple :
   
-  . algorithme afficherBonjour // toujours la premiere ligne , nom de l'algorithme
+  . algorithme afficherBonjour  // toujours la premiere ligne , nom de l'algorithme
   . debut                      // toujours la seconde ligne  , debut de l'algo
-  .     do_something... ;     
-  . fin                        // toujours la derniere ligne , fin de l'algo 
+  .     do_something... ;     //
+  . fin                      // toujours la derniere ligne , fin de l'algo 
   ```
 PS : ces 3 mots n'apparaissent qu'une seule fois par algorithme
 
@@ -71,9 +71,9 @@ Le SI
   ```
   Exemple :
   
-  . si ( conditionVrai )    // si la condition est vrai nous
+  . si ( conditionVrai )     // si la condition est vrai nous
   .     do_something... ;   // faisons quelque chose
-  . fsi                     // fin de la condition
+  . fsi                    // fin de la condition
   ```
     
 Le SINON
@@ -84,26 +84,26 @@ Le SINON
   ```
   Exemple :
   
-  . si ( conditionVrai )        // si la condition est vrai nous
-  .     do_something... ;       // faisons quelque chose
-  . sinon                       // sinon
+  . si ( conditionVrai )           // si la condition est vrai nous
+  .     do_something... ;         // faisons quelque chose
+  . sinon                        // sinon
   .     do_something_else... ;  // on fait quelque chose d'autre
-  . fsi                         // fin de la condition
+  . fsi                        // fin de la condition
   ```
   
 Le SINON_SI
 
   Permet une alternative a la condition SI, en rajoutant sa propre condition
-  de la meme maniere qu'un si
+  de la meme maniere qu'un SI
   
   ```
   Exemple :
   
-  . si ( conditionVrai )         // si la condition est vrai nous
+  . si ( conditionVrai )          // si la condition est vrai nous
   .     do_something... ;        // faisons quelque chose
-  . sinon_si ( condition2Vrai)   // sinon si la seconde condition est vrai
-  .     do_something_else... ;   // on fait quelque chose d'autre
-  . fsi                          // fin de la condition
+  . sinon_si ( condition2Vrai)  // sinon si la seconde condition est vrai
+  .     do_something_else... ; // on fait quelque chose d'autre
+  . fsi                       // fin de la condition
   ```
   
 Le FSI
@@ -111,18 +111,95 @@ Le FSI
   Ferme le bloc conditionnel SI. il doit y avoir autant de fsi que de SI
   Le FSI est au meme niveau d'indentation que le SI qui le préccede 
   
-  ```Exemple : voir plus haut ```
+  ``` Exemple : voir plus haut ```
   
   
 Le OU
 
+  Opérateur logique conditionnel permettant la création d'une deuxieme condition, fonctionne de la meme maniere qu'un ou logique,
+  et a donc pour table de vérité ->
+  
+  ```
+  Table vérité 
+  OU / OR
+  +-------+---+
+  | 0 . 0 | 0 |
+  | 0 . 1 | 1 |
+  | 1 . 0 | 1 |
+  | 1 . 1 | 1 |
+  +-------+---+
+  ```
+  
+  ```
+  Exemple:
+  
+  . si ( ( condition1) ou (condition2) ) // si la condition 1 ou (ou+et) la condition 2 est vrai 
+  .     do_something ... :              // on fait quelque chose
+  . fsi                                // fin du bloc conditionnel
+  ```
+  
 Le OU_SINON
 
+  Opérateur logique conditionnel ayant le meme fonctionnement logique que le OU, mais qui prend en compte l'ordre d'éxecution, et qui convient donc
+  mieux dans une succession de contidition
+  
+  ```
+  Exemple:
+          //(ici on prend en compte l'ordre d'éxecution, d'abord condition1 puis sinon condition2)
+  . si ( ( condition1) ou_sinon (condition2) ) // si la condition 1 ou (ou+et) la condition 2 est vrai 
+  .     do_something ... :                    // on fait quelque chose
+  . fsi                                      // fin du bloc conditionnel
+  ```
+  
 Le ET
 
+  Opérateur logique condtionnel ET, Permet d'additionner des conditions entre elle, 
+  en suivant le fonctionnement du ET logique, et a donc pour table de vérité 
+  
+  ```
+  Table vérité 
+  ET / AND
+  +-------+---+
+  | 0 . 0 | 0 |
+  | 0 . 1 | 0 |
+  | 1 . 0 | 0 |
+  | 1 . 1 | 1 |
+  +-------+---+
+  ```
+
+  ```
+  Exemple:
+      
+  . si ( ( condition1) et (condition2) )    // si la condition 1 et la condition 2 est vrai 
+  .     do_something ... :                 // on fait quelque chose
+  . fsi                                   // fin du bloc conditionnel
+  ```
+
+
 Le ET_ALORS
+   
+  Opérateur logique condtionnel ET, Permet d'additionner des conditions entre elle tout comme le ET 
+  mais qui prend en compte l'ordre d'éxecution, et qui convient donc 
+  mieux dans une succession de contidition
+
+  ```
+  Exemple:
+          //(ici on prend en compte l'ordre d'éxecution, d'abord condition1 et ensuite condition2)
+  . si ( ( condition1) et (condition2) )      // si la condition 1 et la condition 2 est vrai 
+  .     do_something ... :                   // on fait quelque chose
+  . fsi                                     // fin du bloc conditionnel
+  ```
 
 Le NON
+  
+  Opérateur logique conditionnel permettant d'exprimer la negation / l'inverse d'une condition succedant le NON
+  
+  ```
+  Exemple:
+  . si ( NON ( condition1 ) )      // si la condition n'est pas vrai
+  .     do_something ... :        // on fait quelque chose
+  . fsi                          // fin du bloc conditionnel
+  ```
 
 ______________________
 
