@@ -492,7 +492,7 @@ Le MODULO
 
 ```
 
-                         WIP
+                   WORK IN PROGRESS...
 
 
                                   __________
