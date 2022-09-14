@@ -86,7 +86,7 @@ Le SINON
   
   . si ( conditionVrai )           // si la condition est vrai nous
   .     do_something... ;         // faisons quelque chose
-  . sinon                        // sinon
+  .   sinon                      // sinon
   .     do_something_else... ;  // on fait quelque chose d'autre
   . fsi                        // fin de la condition
   ```
@@ -99,11 +99,11 @@ Le SINON_SI
   ```
   Exemple :
   
-  . si ( conditionVrai )          // si la condition est vrai nous
-  .     do_something... ;        // faisons quelque chose
-  . sinon_si ( condition2Vrai)  // sinon si la seconde condition est vrai
-  .     do_something_else... ; // on fait quelque chose d'autre
-  . fsi                       // fin de la condition
+  . si ( conditionVrai )           // si la condition est vrai nous
+  .     do_something... ;         // faisons quelque chose
+  .   sinon_si ( condition2Vrai) // sinon si la seconde condition est vrai
+  .     do_something_else... ;  // on fait quelque chose d'autre
+  . fsi                        // fin de la condition
   ```
   
 Le FSI
@@ -120,7 +120,7 @@ Le OU
   et a donc pour table de vérité ->
   
   ```
-  Table vérité 
+  Table de vérité 
   OU / OR
   +-------+---+
   | 0 . 0 | 0 |
@@ -134,7 +134,7 @@ Le OU
   Exemple:
   
   . si ( ( condition1) ou (condition2) ) // si la condition 1 ou (ou+et) la condition 2 est vrai 
-  .     do_something ... ;              // on fait quelque chose
+  .     do_something... ;              // on fait quelque chose
   . fsi                                // fin du bloc conditionnel
   ```
   
@@ -147,7 +147,7 @@ Le OU_SINON
   Exemple:
           //(ici on prend en compte l'ordre d'éxecution, d'abord condition1 puis sinon condition2)
   . si ( ( condition1) ou_sinon (condition2) ) // si la condition 1 ou (ou+et) la condition 2 est vrai 
-  .     do_something ... ;                    // on fait quelque chose
+  .     do_something... ;                    // on fait quelque chose
   . fsi                                      // fin du bloc conditionnel
   ```
   
@@ -157,7 +157,7 @@ Le ET
   en suivant le fonctionnement du ET logique, et a donc pour table de vérité 
   
   ```
-  Table vérité 
+  Table de vérité 
   ET / AND
   +-------+---+
   | 0 . 0 | 0 |
@@ -171,7 +171,7 @@ Le ET
   Exemple:
       
   . si ( ( condition1) et (condition2) )    // si la condition 1 et la condition 2 est vrai 
-  .     do_something ... ;                 // on fait quelque chose
+  .     do_something... ;                 // on fait quelque chose
   . fsi                                   // fin du bloc conditionnel
   ```
 
@@ -186,7 +186,7 @@ Le ET_ALORS
   Exemple:
           //(ici on prend en compte l'ordre d'éxecution, d'abord condition1 et ensuite condition2)
   . si ( ( condition1) et (condition2) )      // si la condition 1 et la condition 2 est vrai 
-  .     do_something ... ;                   // on fait quelque chose
+  .     do_something... ;                   // on fait quelque chose
   . fsi                                     // fin du bloc conditionnel
   ```
 
@@ -200,7 +200,37 @@ Le NON
   .     do_something ... ;        // on fait quelque chose
   . fsi                          // fin du bloc conditionnel
   ```
+Le CHOIX_SUR x ENTRE
 
+  switch permettant de comparer une variable directement avec different CAS definit a la suite du CHOIX_SUR d_une_variable ENTRE
+  similaire a une succession de si, sinon_si dans le but de comparé une seule variable
+
+Le CAS valeur :
+
+  permet de definir un CAS a comparé avec une variable 
+
+Le AUTRE :
+  
+  permet de definir le CAS execption
+
+Le FCHOIX
+  
+  ferme le switch CHOIX_SUR, et possede la meme indentation que le CHOIX_SUR qu'il complete
+  
+  ```
+  Exemple : 
+  
+  . choix_sur une_variable entre
+  .   cas reponse1 :
+  .     do_something... ;
+  .   cas reponse2 :
+  .     do_something_else... ;
+  .   autre :
+  .     do_something_else2... ;
+  . fchoix
+  ```
+PS : les CAS se termine par un : et le CHOIX_SUR precede le mot ENTRE
+  
 ______________________
 
 ###  LES  BOUCLES  ### 
