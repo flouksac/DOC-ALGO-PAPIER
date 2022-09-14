@@ -49,8 +49,11 @@ Le FIN
 Exemple : 
 
   . algorithme afficherBonjour // toujours la premiere ligne , nom de l'algorithme
+  
   . debut                      // toujours la seconde ligne  , debut de l'algo
+  
   .     do_something... ;     
+  
   . fin                        // toujours la derniere ligne , fin de l'algo 
 
 PS : ces 3 mots n'apparaissent qu'une seule fois par algorithme
@@ -60,7 +63,7 @@ ______________________
 ### LES CONDITIONS ### 
 ______________________ 
 
-__Le SI__
+Le SI
 
   l'opérateur conditionnel SI permet d'exprimer la condition, 
   il contient une condition entre parantheses , 
@@ -74,7 +77,7 @@ __Le SI__
   . fsi                     // fin de la condition
   
     
-__Le SINON__
+Le SINON
 
   Permet une alternative à la condition SI,
   Le sinon est toujours précédé par une condition SI, 
@@ -88,7 +91,7 @@ __Le SINON__
   . fsi                         // fin de la condition
   
   
-__Le SINON_SI__
+Le SINON_SI
 
   Permet une alternative a la condition SI, en rajoutant sa propre condition
   de la meme maniere qu'un si
