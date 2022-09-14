@@ -2,7 +2,8 @@
 
 Dans ce repo vous trouverez un manuel détaillé de la synthaxe strict de l'algo papier selon Mr Casali 
 
-afin de pouvoir visualiser la synthaxe particuliere de se langage voici une super extension ! 
+afin de pouvoir visualiser la synthaxe particuliere de ce langage voici une super extension pour visual studio code,
+developpez par Nils Ponsard (sautax#9170) ! 
 https://marketplace.visualstudio.com/items?itemName=nilsponsard.algo-papier-iut-aix&ssr=false#review-details 
 
 ______________________ 
@@ -10,7 +11,7 @@ ______________________
 ### ALGO ? hein ?? ### 
 ______________________
 
-Séquence d'opérations visant à la résolution d'un probl-me en un temps fini ( mentionner la condition d'arret )
+une algorithme est une séquence d'opérations visant à la résolution d'un problème en un temps fini ( mentionner la condition d'arret )
 ______________________ 
 
 ###  LA  SYNTHAXE  ### 
@@ -350,17 +351,45 @@ Exemple :
 
 ```
 
-
-
 Le POUR
+
+permet de creer une boucle a compteur, elle se combine au VARIANT_DE x A y, il s'agit d'une boucle qui s'auto incrémente, 
+(sauf cas contraite car elle peut aussi décrémenté), en programmation comme pseudo code, on a l'habitude de donner pour nom a notre compteur 'i', puis 'j','k'...
 
 Le VARIANT_DE x A y 
 
+cette instruction permet la gestion d'un compteur au sein d'une boucle,
+le compteur variant de x a y, le compteur se déclarera directement dans le variant ( initialiser a x)
+
+```
+Exemple : 
+
+. pour ( i variant_de 1 a 100 ) // on repete l'affichage de i 
+. faire                        // (le compteur qui incrémente de 1 a chaque tour) 
+.   afficher ( i )            // avec i variant de 1 a 100
+. ffaire
+
+```
+
+
 Le SORTIE
+
+permet la sortie d'une boucle lors de son execution, souvent couplé a une condition, ( qu'on appelle condition de sortie )
 
 Le CONTINUE
 
+permet de revenir au début de la boucle ( au niveau du faire, ou du repeter ) 
 
+```
+Exemple :
+
+. tant_que (NON victoire)                  //tant qu'on a pas gagné
+. faire                                   // on repete la phase
+.   prendreUnePortion ;                  // de prendre une potion, et si on a pas encore assez de vie
+.   si ( Non beaucoupDeVie ) continue ; // on retourne a la ligne tant_que (Non victoire)
+.   attauquer ;                        // ou sinon on attaque
+. ffaire 
+```
 
 ______________________
 
