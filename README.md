@@ -4,7 +4,7 @@ Dans ce repo vous trouverez un manuel détaillé de la synthaxe strict de l'algo
 
 afin de pouvoir visualiser la synthaxe particuliere de ce langage voici une super extension pour visual studio code,
 developpez par Nils Ponsard (sautax#9170) ! 
-https://marketplace.visualstudio.com/items?itemName=nilsponsard.algo-papier-iut-aix&ssr=false#review-details 
+https://github.com/NilsPonsard/algo-papier-iut-aix
 
 ______________________ 
 
