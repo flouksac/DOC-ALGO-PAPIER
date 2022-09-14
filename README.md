@@ -134,7 +134,7 @@ Le OU
   Exemple:
   
   . si ( ( condition1) ou (condition2) ) // si la condition 1 ou (ou+et) la condition 2 est vrai 
-  .     do_something ... :              // on fait quelque chose
+  .     do_something ... ;              // on fait quelque chose
   . fsi                                // fin du bloc conditionnel
   ```
   
