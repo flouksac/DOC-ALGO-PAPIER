@@ -147,7 +147,7 @@ Le OU_SINON
   Exemple:
           //(ici on prend en compte l'ordre d'éxecution, d'abord condition1 puis sinon condition2)
   . si ( ( condition1) ou_sinon (condition2) ) // si la condition 1 ou (ou+et) la condition 2 est vrai 
-  .     do_something ... :                    // on fait quelque chose
+  .     do_something ... ;                    // on fait quelque chose
   . fsi                                      // fin du bloc conditionnel
   ```
   
@@ -171,7 +171,7 @@ Le ET
   Exemple:
       
   . si ( ( condition1) et (condition2) )    // si la condition 1 et la condition 2 est vrai 
-  .     do_something ... :                 // on fait quelque chose
+  .     do_something ... ;                 // on fait quelque chose
   . fsi                                   // fin du bloc conditionnel
   ```
 
@@ -186,7 +186,7 @@ Le ET_ALORS
   Exemple:
           //(ici on prend en compte l'ordre d'éxecution, d'abord condition1 et ensuite condition2)
   . si ( ( condition1) et (condition2) )      // si la condition 1 et la condition 2 est vrai 
-  .     do_something ... :                   // on fait quelque chose
+  .     do_something ... ;                   // on fait quelque chose
   . fsi                                     // fin du bloc conditionnel
   ```
 
@@ -197,7 +197,7 @@ Le NON
   ```
   Exemple:
   . si ( NON ( condition1 ) )      // si la condition n'est pas vrai
-  .     do_something ... :        // on fait quelque chose
+  .     do_something ... ;        // on fait quelque chose
   . fsi                          // fin du bloc conditionnel
   ```
 
