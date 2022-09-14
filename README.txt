@@ -18,8 +18,6 @@ ______________________
 
 La sensibilité a la casse
   
-
-
 Le CamelCase
 
 Le snake_case
@@ -29,8 +27,6 @@ Le //
 LE ;
 
 L'indentation
-
-
 
 ______________________ 
 
@@ -49,11 +45,8 @@ Le FIN
 Exemple : 
 
   . algorithme afficherBonjour // toujours la premiere ligne , nom de l'algorithme
-  
   . debut                      // toujours la seconde ligne  , debut de l'algo
-  
   .     do_something... ;     
-  
   . fin                        // toujours la derniere ligne , fin de l'algo 
 
 PS : ces 3 mots n'apparaissent qu'une seule fois par algorithme
