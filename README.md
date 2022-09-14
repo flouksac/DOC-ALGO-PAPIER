@@ -1,9 +1,9 @@
 # DOC-ALGO-PAPIER
 
-Dans ce repo vous trouverez un manuel détaillé de la synthaxe strict de l'algo papier selon Mr Casali 
+Dans ce repo vous trouverez un manuel détaillé de la syntaxe strict de l'algo papier selon Mr Casali 
 
-afin de pouvoir visualiser la synthaxe particuliere de ce langage voici une super extension pour visual studio code,
-developpez par Nils Ponsard (sautax#9170) ! 
+afin de pouvoir visualiser la syntaxe particuliere de ce langage voici une super extension pour visual studio code,
+developpé par Nils Ponsard (sautax#9170) ! 
 https://github.com/NilsPonsard/algo-papier-iut-aix
 
 ______________________ 
@@ -14,7 +14,7 @@ ______________________
 une algorithme est une séquence d'opérations visant à la résolution d'un problème en un temps fini ( mentionner la condition d'arret )
 ______________________ 
 
-###  LA  SYNTHAXE  ### 
+###  LA  SYNTAXE  ### 
 ______________________
 
 La sensibilité a la casse 
