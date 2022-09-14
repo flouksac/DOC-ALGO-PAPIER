@@ -43,12 +43,12 @@ Le FIN
   le dernier mot qui devrait apparaitre, permet de marquer la fin de l'algorithme
 
 Exemple : 
-
+  ```
   . algorithme afficherBonjour // toujours la premiere ligne , nom de l'algorithme
   . debut                      // toujours la seconde ligne  , debut de l'algo
   .     do_something... ;     
   . fin                        // toujours la derniere ligne , fin de l'algo 
-
+  ```
 PS : ces 3 mots n'apparaissent qu'une seule fois par algorithme
 
 ______________________ 
@@ -57,13 +57,13 @@ ______________________
 ______________________ 
 
 Le SI
-
+`
   l'opérateur conditionnel SI permet d'exprimer la condition, 
   il contient une condition entre parantheses , 
   la condition est soit vrai, soit fausse,
   il n'exite pas d'autre état, l'operateur SI est suivi d'instructions et peut etre succédé par d'autres conditions 
   lorsque nous quittons le bloc conditionnel le mot FSI ferme le test
-  
+` 
   exemple :
   ```
   . si ( conditionVrai )    // si la condition est vrai nous
