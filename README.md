@@ -65,10 +65,11 @@ Le SI
   lorsque nous quittons le bloc conditionnel le mot FSI ferme le test
   
   exemple :
+  ```
   . si ( conditionVrai )    // si la condition est vrai nous
   .     do_something... ;   // faisons quelque chose
   . fsi                     // fin de la condition
-  
+  ```
     
 Le SINON
 
@@ -76,13 +77,13 @@ Le SINON
   Le sinon est toujours précédé par une condition SI, 
   
   exemple :
-  
+  ```
   . si ( conditionVrai )        // si la condition est vrai nous
   .     do_something... ;       // faisons quelque chose
   . sinon                       // sinon
   .     do_something_else... ;  // on fait quelque chose d'autre
   . fsi                         // fin de la condition
-  
+  ```
   
 Le SINON_SI
 
@@ -90,18 +91,19 @@ Le SINON_SI
   de la meme maniere qu'un si
   
   exemple :
-  
+  ```
   . si ( conditionVrai )         // si la condition est vrai nous
   .     do_something... ;        // faisons quelque chose
   . sinon_si ( condition2Vrai)   // sinon si la seconde condition est vrai
   .     do_something_else... ;   // on fait quelque chose d'autre
   . fsi                          // fin de la condition
+  ```
   
 Le FSI
   Ferme le bloc conditionnel SI. il doit y avoir autant de fsi que de SI
   Le FSI est au meme niveau d'indentation que le SI qui le préccede 
   
-  exemple : voir plus haut 
+  exemple : ```voir plus haut ```
   
   
 Le OU
