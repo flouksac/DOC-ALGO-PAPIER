@@ -391,16 +391,6 @@ Exemple :
 . ffaire 
 ```
 
-______________________
-
-### LES  FONCTIONS ### 
-______________________
-
-La PROCEDURE
-
-La FONCTION
-
-Le RENVOIE
 
 ______________________ 
 
@@ -450,6 +440,24 @@ Le REEL
 
 La KONSTANTE
 
+______________________
+
+### LES  FONCTIONS ### 
+______________________
+
+La PROCEDURE
+
+La FONCTION
+
+Le RENVOIE
+
+Le IN
+
+Le IN_OUT
+
+Le OUT
+
+
 ______________________ 
 
 ###  LES METHODES  ### 
@@ -479,14 +487,6 @@ Le REDIMENSIONNER
 Le MODULO 
 
 
-
-
-
-Le IN
-
-Le IN_OUT
-
-Le OUT
 
 
 
