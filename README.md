@@ -44,9 +44,10 @@ Le DEBUT
 Le FIN
 
   le dernier mot qui devrait apparaitre, permet de marquer la fin de l'algorithme
-
-Exemple : 
+ 
   ```
+  Exemple :
+  
   . algorithme afficherBonjour // toujours la premiere ligne , nom de l'algorithme
   . debut                      // toujours la seconde ligne  , debut de l'algo
   .     do_something... ;     
@@ -67,8 +68,9 @@ Le SI
   il n'exite pas d'autre état, l'operateur SI est suivi d'instructions et peut etre succédé par d'autres conditions 
   lorsque nous quittons le bloc conditionnel le mot FSI ferme le test
   
-  exemple :
   ```
+  Exemple :
+  
   . si ( conditionVrai )    // si la condition est vrai nous
   .     do_something... ;   // faisons quelque chose
   . fsi                     // fin de la condition
@@ -79,8 +81,9 @@ Le SINON
   Permet une alternative à la condition SI,
   Le sinon est toujours précédé par une condition SI, 
   
-  exemple :
   ```
+  Exemple :
+  
   . si ( conditionVrai )        // si la condition est vrai nous
   .     do_something... ;       // faisons quelque chose
   . sinon                       // sinon
@@ -93,8 +96,9 @@ Le SINON_SI
   Permet une alternative a la condition SI, en rajoutant sa propre condition
   de la meme maniere qu'un si
   
-  exemple :
   ```
+  Exemple :
+  
   . si ( conditionVrai )         // si la condition est vrai nous
   .     do_something... ;        // faisons quelque chose
   . sinon_si ( condition2Vrai)   // sinon si la seconde condition est vrai
@@ -107,7 +111,7 @@ Le FSI
   Ferme le bloc conditionnel SI. il doit y avoir autant de fsi que de SI
   Le FSI est au meme niveau d'indentation que le SI qui le préccede 
   
-  exemple : ```voir plus haut ```
+  ```Exemple : voir plus haut ```
   
   
 Le OU
