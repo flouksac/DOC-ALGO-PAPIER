@@ -3,7 +3,7 @@
 Dans ce repo vous trouverez un manuel détaillé de la syntaxe strict de l'algo papier selon Mr Casali 
 
 afin de pouvoir visualiser la syntaxe particuliere de ce langage voici une super extension pour visual studio code,
-developpé par Nil Ponsard (sautax#9170) ! 
+developpé par Nils Ponsard (sautax#9170) ! 
 https://github.com/NilsPonsard/algo-papier-iut-aix
 
 ______________________ 
