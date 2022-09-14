@@ -34,12 +34,15 @@ ______________________
 ______________________
 
 L' ALGORITHME
+
   premier mot qui devrait apparaitre, permet de donner un nom à l'algorithme 
  
 Le DEBUT
+
   le second mot qui devrait apparaitre, permet de marquer le début de l'algorithme
    
 Le FIN
+
   le dernier mot qui devrait apparaitre, permet de marquer la fin de l'algorithme
 
 Exemple : 
@@ -57,13 +60,13 @@ ______________________
 ______________________ 
 
 Le SI
-`
+
   l'opérateur conditionnel SI permet d'exprimer la condition, 
   il contient une condition entre parantheses , 
   la condition est soit vrai, soit fausse,
   il n'exite pas d'autre état, l'operateur SI est suivi d'instructions et peut etre succédé par d'autres conditions 
   lorsque nous quittons le bloc conditionnel le mot FSI ferme le test
-` 
+  
   exemple :
   ```
   . si ( conditionVrai )    // si la condition est vrai nous
@@ -100,6 +103,7 @@ Le SINON_SI
   ```
   
 Le FSI
+
   Ferme le bloc conditionnel SI. il doit y avoir autant de fsi que de SI
   Le FSI est au meme niveau d'indentation que le SI qui le préccede 
   
