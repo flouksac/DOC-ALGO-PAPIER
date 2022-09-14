@@ -10,7 +10,7 @@ ______________________
 ### ALGO ? hein ?? ### 
 ______________________
 
-  Séquence d'opérations visant à la résolution d'un probl-me en un temps fini ( mentionner la condition d'arret )
+Séquence d'opérations visant à la résolution d'un probl-me en un temps fini ( mentionner la condition d'arret )
 ______________________ 
 
 ###  LA  SYNTHAXE  ### 
