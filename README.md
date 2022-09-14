@@ -16,18 +16,54 @@ ______________________
 ###  LA  SYNTHAXE  ### 
 ______________________
 
-La sensibilité a la casse
-  
-Le CamelCase
+La sensibilité a la casse 
 
+La sensibilité à la casse (traduction de l'anglais case sensitivity) est une notion informatique signifiant que dans un contexte donné, le sens d'une chaîne de caractères (par exemple un mot, un nom de variable, un nom de fichier)
+
+```
+Exemple,
+la variable UneVar ne sera pas la meme que la variable uNeVaR 
+```
+
+Le camelCase
+  
+  convention de nommage des variables,
+  la regle étant de rajouter une majuscule a chaque nouveau mot dans la variable, (le premier mot commençant par une minuscule)
+  par exemple : uneVariableAvecUnNomVraimentBeaucoupTropLongPourPasGrandChoseAuFinal 
+  
 Le snake_case
+  
+  convention de nommage des variables,
+  la regle étant de mettre un underscore/tiret du bas ( _ ) entre chaque mots composant une variable
+  par exemple : une_variable_en_snake_case_c_est_plus_aeree_ahah
 
 Le // 
 
-LE ;
+  le // permet de commenter son algo ( et accessoirement son code )
+  il est crucial de commenter son code, afin de concerver une certaine lisibilité et pour pouvoir maintenir a jour son code ( quand on y revient apres un bon moment )
 
+LE ; 
+
+  le ; ou semicolon en anglais est un terminateur, il indique la fin d'une instruction. Il équivaut à un point qui termine une phrase.
+  ici le ; permet de séparé les actions unique, il se met a la fin d'une sequence d'action
+  
+  ```
+  Exemple :
+  
+  . debut
+  .   une_action ;
+  .   une_autre_action ;
+  . fin
+
+  ```
+  
 L'indentation
 
+  Dans certains langages de programmation (Haskell, Python…), l'indentation a un sens spécifique (p.ex. la délimitation des blocs, 
+  rôle tenu par les accolades comme en C, ou en Java par exemple ), 
+  alors que dans les autres elle est ignorée et n'a d'utilité que pour les programmeurs humains afin d'apporté plus de lisibilité.
+  Ici en Algo, elle nous permettra de mieux structurer et de rendre plus lisibile notre pseudo-code/
+  
 ______________________ 
 
 ###  LA STRUCTURE  ### 
@@ -134,7 +170,7 @@ Le OU
   Exemple:
   
   . si ( ( condition1) ou (condition2) ) // si la condition 1 ou (ou+et) la condition 2 est vrai 
-  .     do_something... ;              // on fait quelque chose
+  .     do_something... ;               // on fait quelque chose
   . fsi                                // fin du bloc conditionnel
   ```
   
@@ -147,7 +183,7 @@ Le OU_SINON
   Exemple:
           //(ici on prend en compte l'ordre d'éxecution, d'abord condition1 puis sinon condition2)
   . si ( ( condition1) ou_sinon (condition2) ) // si la condition 1 ou (ou+et) la condition 2 est vrai 
-  .     do_something... ;                    // on fait quelque chose
+  .     do_something... ;                     // on fait quelque chose
   . fsi                                      // fin du bloc conditionnel
   ```
   
@@ -171,7 +207,7 @@ Le ET
   Exemple:
       
   . si ( ( condition1) et (condition2) )    // si la condition 1 et la condition 2 est vrai 
-  .     do_something... ;                 // on fait quelque chose
+  .     do_something... ;                  // on fait quelque chose
   . fsi                                   // fin du bloc conditionnel
   ```
 
@@ -186,7 +222,7 @@ Le ET_ALORS
   Exemple:
           //(ici on prend en compte l'ordre d'éxecution, d'abord condition1 et ensuite condition2)
   . si ( ( condition1) et (condition2) )      // si la condition 1 et la condition 2 est vrai 
-  .     do_something... ;                   // on fait quelque chose
+  .     do_something... ;                    // on fait quelque chose
   . fsi                                     // fin du bloc conditionnel
   ```
 
@@ -236,21 +272,95 @@ ______________________
 ###  LES  BOUCLES  ### 
 ______________________ 
 
+La BOUCLE
+ 
+permet l'initiation d'une boucle infinit, ce qui sera contenu entre la BOUCLE et le FBOUCLE sera exécuté a l'infini, 
+si il n'y pas de condition d'arret utilisant l'instruction SORTIE
+
+La FBOUCLE
+
+ferme la zone de la boucle, et s'indente au meme niveau, similaire au FSI qui ferme le bloc conditionnel du SI, mais dans le cas de la BOUCLE
+
+```
+Exemple :
+
+voici une premiere boucle sans condition d'arret,
+
+. boucle                   //repetition de l'instruction do_something, et do_something_else a l'infini
+.   do_something... ;
+.   do_something_else... ;
+. fboulce
+
+et une deuxieme avec une condition d'arret,
+
+. boucle                        // pourrait se traduire par
+.  si (bordDeFalaise) sortie ; // si nous sommes au bord de la falaise, 
+.  avancerDUnPas;             // quitter la boucle qui nous fait avancer
+. fboucle
+
+```
+
+Le REPETER
+  
+  permet de rentrer dans une boucle ou nous allons REPETER une suite d'instruction JUSQUA atteindre une condition d'arret/de sortie
+  
+Le JUSQUA
+
+  exprime la condition de sortie lorsqu'une condition est vrai,
+  lorsque le jusqua n'est pas précédé par le mot REPETER il faut délimiter le bloc de la boucle par les instructions FAIRE et FFAIRE
+
+```
+Exemple : 
+
+. repeter                             // ici on va repeter l'action commenter_code
+.   je_commente_toujours_mon_code ;  // jusqu'a atteindre la condition (mort) -> qui deviendrait vrai (rip...)
+. jusqua ( ce_que_mort_s_en_suive ) // et lorsqu'on l'atteint on quitte la boucle
+
+Un autre exemple avec la condition d'arret en premiere ligne ( sans le bloc répéter, dans le cas
+ou on aurait besoin de verifier que la condition ne soit pas vrai ) ( au cas ou )
+
+. jusqua ( atteindreLeBut ) //jusqu'a ce qu'on atteigne notre but ( en partant du principe qu'il n'est pas atteint
+. faire                    // on fait
+.   do_something... ;     // quelque chose (sensé nous rapprocher du but)
+. ffaire                 // fin du bloc boucle jusqua (mais ne veut pas dire qu'a la fin de do_something on va necessairement quitté la boucle)
+                        // c'est le role de la condition jusqua de nous faire sortir de la boucle
+
+```
+
+Le FAIRE
+
+  permet de délimiter le début d'un bloc de boucle avec TANT_QUE ou JUSQUA (voir exemple plus haut)
+
+Le FFAIRE
+
+  permet de terminer un bloc de boucle
+
 Le TANT_QUE
+
+  boucle tant_que, qui va continuer son execution tant que la condition est vrai, (on remarque d'ailleur qu'elle est l'inverse de la boucle jusqua)
+  elle peut commencer par l'instruction REPETER et finir par TANT_QUE ou etre délimité par FAIRE et FFAIRE
+
+```
+Exemple : 
+
+. tant_que ( J_ai_la_solution ) // tant que je peux apporter mon aide
+. faire                        //
+.   je_la_partage ;           // je le fait, mais quand je ne peux pas je passe la main (je sors de la boucle)
+. ffaire                     //
+
+```
+
+
 
 Le POUR
 
-Le JUSQUA
-
-Le REPETER
+Le VARIANT_DE x A y 
 
 Le SORTIE
 
 Le CONTINUE
 
-Le BOUCLE
 
-Le FBOUCLE
 
 ______________________
 
@@ -337,13 +447,11 @@ L' ALLONGER
 
 Le REDIMENSIONNER
 
+Le MODULO 
 
 
 
 
-Le FAIRE
-
-Le FFAIRE
 
 Le IN
 
