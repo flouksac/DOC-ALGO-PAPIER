@@ -1,9 +1,9 @@
 # DOC-ALGO-PAPIER
 
-Dans ce repo vous trouverez un manuel détaillé de la synthaxe strict de l'algo papier selon Mr Casali
+Dans ce repo vous trouverez un manuel détaillé de la synthaxe strict de l'algo papier selon Mr Casali \n
 
-afin de pouvoir visualiser la synthaxe particuliere de se langage voici une super extension ! 
-https://marketplace.visualstudio.com/items?itemName=nilsponsard.algo-papier-iut-aix&ssr=false#review-details
+afin de pouvoir visualiser la synthaxe particuliere de se langage voici une super extension ! \n
+https://marketplace.visualstudio.com/items?itemName=nilsponsard.algo-papier-iut-aix&ssr=false#review-details \n
 
 ______________________ 
 
