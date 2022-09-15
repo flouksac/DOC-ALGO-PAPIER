@@ -478,11 +478,26 @@ ______________________
 
 Le DECLARER
 
+Permet de déclarer une variable,
+Il est important de déclarer chaque variables avant de leur attribuer des valeurs
+Le mot DECLARER est toujour suivis par un le nom d'une variable, puis ':' et enfin un type primitif
+
+
 Le <-
+
+Le symbole <- permet d'affecter une valeur a une variable, attention a affecté une valeur du même type que la variable initial
 
 Le CARACTERE
 
+Type primitif concernant tout type de caractère unique, il est toujours entre guillemets simple (simple quote) 
+Les lettres, les chiffres, les caractères spéciaux tel que \n sont du type primitif 
+
 Le STRING 
+
+Type primitif similaire au tableau, il est la concaténation de plusieurs caractère, un STRING peut donc être une phrase,
+Un mot ou encore une suite de lettres et de chiffres 
+Sa valeur s'ecrit entre double guillemets (double quotes)
+
 
 Le TABLEAU_DE
 
