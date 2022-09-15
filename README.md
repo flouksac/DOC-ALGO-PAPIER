@@ -32,6 +32,8 @@ Le camelCase
   la regle étant de rajouter une majuscule a chaque nouveau mot dans la variable, (le premier mot commençant par une minuscule)
   par exemple : uneVariableAvecUnNomVraimentBeaucoupTropLongPourPasGrandChoseAuFinal 
   
+  PS : Mr Casali preferes le camelCase
+  
 Le snake_case
   
   convention de nommage des variables,
@@ -387,7 +389,7 @@ Exemple :
 . faire                                   // on repete la phase
 .   prendreUnePortion ;                  // de prendre une potion, et si on a pas encore assez de vie
 .   si ( Non beaucoupDeVie ) continue ; // on retourne a la ligne tant_que (Non victoire)
-.   attauquer ;                        // ou sinon on attaque
+.   attaquer ;                        // ou sinon on attaque
 . ffaire 
 ```
 
