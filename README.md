@@ -735,6 +735,22 @@ Le PRED ( c )
 
 renvoie le caractère c précédant dans l’ordre prédéfinit
 
+```
+
+Exemple :
+
+. declarer caract : caractere;
+. caract <- nImporteQuelCaractere;
+...
+. afficher (tolower (caract)); // caract en minuscule
+. afficher (toupper (caract)); // caract en majuscule
+. afficher (succ (caract)); // suivant de caract
+. afficher (pred (caract)); // précédent de caract
+
+```
+
+
+
 Le MODULO ( x , y )
 
 Retourne le reste de la division entière de y par x
