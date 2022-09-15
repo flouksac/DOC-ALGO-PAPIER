@@ -381,7 +381,6 @@ Exemple :
 
 ```
 
-
 Le SORTIE
 
 permet la sortie d'une boucle lors de son execution, souvent couplé a une condition, ( qu'on appelle condition de sortie )
@@ -466,8 +465,6 @@ Exemple :
 . fsi
 
 ```
-
-
 
 Le <
 
@@ -659,13 +656,6 @@ Le AFFICHER
 
 la méthode afficher permet d'afficher le contenu de ses parametres a l'écran, elle ne renvoie rien (ne pas confondre afficher/renvoyer)
 
-```
-Exemple : 
-
-.
-
-```
-
 Le SAISIR
 
 la méthode saisir permet de récupérer une entrée clavier afin d'affecter la valeur rentrée par l'utilisateur dans une variable,
@@ -674,7 +664,9 @@ saisir prend en parametre, une variable a modifié, et ne renvoi rien en sortie,
 ```
 Exemple : 
 
-.
+. definir unEntier : entier ;
+. saisir ( unEntier );
+. afficher ( unEntier );    // >> affiche la valeur attribué a unEntier par la saisie
 
 ```
 
@@ -685,58 +677,10 @@ l'instruction ligne_suivante ne prend rien en parametre, elle permet seulement d
 ```
 Exemple : 
 
-.
+. afficher ( " tada " );
+. ligne_suivante ;
 
 ```
-
-Le TAILLE ( t )
-
-renvoie le nombre d'éléments du tableau  t ( renvoie son nombre de cases/ la longueur du tableau)
-
-```
-Exemple : 
-
-. declarer  tabReel  :  tableau_de 10 entier ;
-. afficher ( taille ( tabReel ) ); // >> 10
-
-```
-
-Le TOUPPER
-
-```
-Exemple : 
-
-.
-
-```
-
-Le TOLOWER
-
-```
-Exemple : 
-
-.
-
-```
-
-Le SUCC
-
-```
-Exemple : 
-
-.
-
-```
-
-Le PRED
-
-```
-Exemple : 
-
-.
-
-```
-
 L' ALLONGER ( t , nb )
 
 permet d'ajouter a un tableau t, nb cases a la fin du tableau
@@ -763,16 +707,53 @@ Exemple :
 
 ```
 
-Le MODULO 
+Le TAILLE ( t )
+
+renvoie le nombre d'éléments du tableau  t ( renvoie son nombre de cases/ la longueur du tableau)
 
 ```
 Exemple : 
 
-.
+. declarer  tabReel  :  tableau_de 10 entier ;
+. afficher ( taille ( tabReel ) ); // >> 10
 
 ```
 
+Le TOUPPER ( c )
+
+renvoie le caractère c en majuscule (uniquement si c’est une minuscule)
+
+Le TOLOWER ( c )
+
+renvoie le caractère c en minuscule (uniquement si c’est une majuscule)
+
+Le SUCC ( c )
+
+renvoie le caractère c suivant dans l’ordre prédéfinit
+
+Le PRED ( c )
+
+renvoie le caractère c précédant dans l’ordre prédéfinit
+
+Le MODULO ( x , y )
+
+Retourne le reste de la division entière de y par x
+/!\ l'ordre des parametres est assez étrange, on a naturellement tendance a inversé x et y
 ```
+Exemple : 
+
+. declarer x : entier_naturel;
+. x <-10;
+. declarer y : entier_naturel;
+. y <- modulo (2, 10);          // y <- modulo (2, x)
+. afficher (y) ; //2
+
+```
+
+Le RAND ( x , y )
+
+Retourne un entier aléatoire dans l’intervalle [ x , y ]
+
 
 ______________________
 
@@ -791,7 +772,7 @@ Le IN_OUT
 
 Le OUT
 
-
+```
 
                    WORK IN PROGRESS...
 
