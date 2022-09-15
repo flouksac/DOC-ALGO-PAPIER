@@ -356,7 +356,15 @@ Exemple :
 Le POUR
 
 permet de creer une boucle a compteur, elle se combine au VARIANT_DE x A y, il s'agit d'une boucle qui s'auto incrémente, 
-(sauf cas contraite car elle peut aussi décrémenté), en programmation comme pseudo code, on a l'habitude de donner pour nom a notre compteur 'i', puis 'j','k'...
+(sauf cas contraite car elle peut aussi décrémenté, voir mot DESCENDANT), 
+en programmation comme en pseudo-code, 
+on a l'habitude de donner pour nom a notre compteur 'i', puis 'j','k'...
+
+Règles : Dans une boucle pour, la variable de parcours doit prendre
+toutes les valeurs entre les bornes minimale et maximale (incluses).
+Aucune rupture de séquence utilisant une instruction sortie n’est
+permise. 
+l'usage de SORTIE, est interdite, mais celle de CONTINUE, est "légal"
 
 Le VARIANT_DE x A y 
 
@@ -393,6 +401,19 @@ Exemple :
 . ffaire 
 ```
 
+Le DESCANDANT
+
+instruction permettant a la boucle POUR de décrémenté son indice,
+
+```
+Exemple :
+. declarer tabInt : tableau_de entier;                     //génération de tabInt, 
+    ...                                                   // on ommet la partie ou on remplis tabInt
+. pour (i variant_de taille (tabInt) -1 a 0 descendant ) // pour i variant de la longueur du tableau -1 a 0, avec i décrémentant )
+. faire                                                 // faire
+.   afficher (tabInt[i]);                              // affichage du tableau a l'indice i
+. ffaire                                              // fin bloc faire
+```
 
 ______________________ 
 
@@ -411,9 +432,17 @@ Le FAUX
 ```
 Exemple : 
 
-.
-.
-.
+. si ( vrai )          // si (vrai) n'est pas reelement utile ici, mais une variable de 
+.   do_something... ; // type booleen pourrait remplacer, vrai, et selon son état
+. fsi                // on rentrerai dans la condition et executerai le do_something ou non
+
+Exemple : 
+
+. si ( faux )               // on ne rentrera jamais dans le si a cause du faux 
+.   do_something... ;      // on ne fait donc pas ca, et on passe directement au sinon
+. sinon
+.   do_something_else... ;
+. fsi
 
 ```
 
@@ -428,9 +457,13 @@ Le NE_VAUT_PAS
 ```
 Exemple : 
 
-.
-.
-.
+. si ( monEntier vaut 1 ) 
+.     afficher ("monEntier vaudrait vraiment 1 !")
+.   sinon_si ( monEntier ne_vaut_pas 2 )
+.     afficher ("monEntier ne vaudrait donc pas 2 !")
+.   sinon 
+.     afficher ("monEntier vaudrait donc 2 !")
+. fsi
 
 ```
 
@@ -472,7 +505,6 @@ Exemple :
 . fsi
 ```
 
-
 ______________________ 
 
 ### LES  VARIABLES ### 
@@ -512,8 +544,6 @@ Exemple :
 . unCaractere <- 'e' ;              // on assigne la valeur 'e' dans la variable
 
 ```
-
-
 
 Le TABLEAU_DE
 
@@ -615,11 +645,132 @@ La KONSTANTE
 ```
 Exemple : 
 
+. declarer KapproximationPi : constante  reel <- 3.14 ;     //on notera qu'on ne peut plus changer KapproximationPi apres cela
+
+```
+
+______________________ 
+
+###  LES METHODES  ### 
+______________________ 
+
+
+Le AFFICHER
+
+la méthode afficher permet d'afficher le contenu de ses parametres a l'écran, elle ne renvoie rien (ne pas confondre afficher/renvoyer)
+
+```
+Exemple : 
+
 .
+
+```
+
+Le SAISIR
+
+la méthode saisir permet de récupérer une entrée clavier afin d'affecter la valeur rentrée par l'utilisateur dans une variable,
+saisir prend en parametre, une variable a modifié, et ne renvoi rien en sortie, elle modifie seulement la variable fourni en entrée
+
+```
+Exemple : 
+
 .
+
+```
+
+Le LIGNE_SUIVANTE
+
+l'instruction ligne_suivante ne prend rien en parametre, elle permet seulement d'afficher un saut de ligne imaginaire, apres un afficher()
+
+```
+Exemple : 
+
 .
+
+```
+
+Le TAILLE ( t )
+
+renvoie le nombre d'éléments du tableau  t ( renvoie son nombre de cases/ la longueur du tableau)
+
+```
+Exemple : 
+
+. declarer  tabReel  :  tableau_de 10 entier ;
+. afficher ( taille ( tabReel ) ); // >> 10
+
+```
+
+Le TOUPPER
+
+```
+Exemple : 
+
 .
+
+```
+
+Le TOLOWER
+
+```
+Exemple : 
+
 .
+
+```
+
+Le SUCC
+
+```
+Exemple : 
+
+.
+
+```
+
+Le PRED
+
+```
+Exemple : 
+
+.
+
+```
+
+L' ALLONGER ( t , nb )
+
+permet d'ajouter a un tableau t, nb cases a la fin du tableau
+
+```
+Exemple : 
+
+. declarer  unTab  :  tableau_de 8 entier ; // on passe d'un tableau de longueur 8
+. allonger ( unTab, 2 );                   // a une liste de longueur 10
+
+```
+
+Le REDIMENSIONNER ( t , nb )
+
+Fixe la taille du tableau t à une longueur nb .
+On peut soit :
+- Allonger le tableau, auquel cas les nouvelles cases ne sont pas initialisées
+- Tronquer (raccourcir) le tableau.
+
+```
+Exemple : 
+. declarer  unTab  :  tableau_de 3 entier ; // on passe d'un tableau de longueur 3
+. redimensionner ( unTab, 10 );            // a une liste de longueur 10
+
+```
+
+Le MODULO 
+
+```
+Exemple : 
+
+.
+
+```
 
 ```
 
@@ -641,35 +792,6 @@ Le IN_OUT
 Le OUT
 
 
-______________________ 
-
-###  LES METHODES  ### 
-______________________ 
-
-
-Le AFFICHER
-
-Le SAISIR
-
-Le LIGNE_SUIVANTE
-
-Le TAILLE
-
-Le TOUPPER
-
-Le TOLOWER
-
-Le SUCC
-
-Le PRED
-
-L' ALLONGER
-
-Le REDIMENSIONNER
-
-Le MODULO 
-
-```
 
                    WORK IN PROGRESS...
 
