@@ -507,6 +507,12 @@ ______________________
 ### LES  VARIABLES ### 
 ______________________ 
 
+
+La porté des variables
+
+une variable déclaré dans un bloc indenté ( par exemple un bloc debut/fin, si/fsi , faire/ffaire ... ) n'existe qu'a l'interieur de ce bloc
+une variable déclaré a l'interieur d'une condition n'existera plus hors de cette meme condition
+
 Le DECLARER
 
 Permet de déclarer une variable,
