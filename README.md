@@ -224,7 +224,7 @@ Le ET_ALORS
   ```
   Exemple:
           //(ici on prend en compte l'ordre d'éxecution, d'abord condition1 et ensuite condition2)
-  . si ( ( condition1) et (condition2) )      // si la condition 1 et la condition 2 est vrai 
+  . si ( ( condition1) et_alors (condition2) )      // si la condition 1 et la condition 2 est vrai 
   .     do_something... ;                    // on fait quelque chose
   . fsi                                     // fin du bloc conditionnel
   ```
