@@ -180,7 +180,7 @@ Le OU
 Le OU_SINON
 
   Opérateur logique conditionnel ayant le meme fonctionnement logique que le OU, mais qui prend en compte l'ordre d'éxecution, et qui convient donc
-  mieux dans une succession de contidition
+  mieux dans une succession de condition
   
   ```
   Exemple:
