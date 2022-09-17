@@ -18,3 +18,4 @@ ____
 - [les méthodes déja présentes](fonctions_existantes.md)
 - [Autres choses importantes à noter](autres_a_noter.md)
 - [Exemples concrets](exemples/)
+- [Awesome](awesome.md)
