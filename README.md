@@ -8,7 +8,7 @@ ____
 
 - qu'est ce qu'un algorithme
 - Syntaxe
-    - [règles de syntaxe](syntaxe/fondamentaux.md)
+    - [Fondamentaux](syntaxe/fondamentaux.md)
     - [structure générale d'un algorithme](syntaxe/structure.md)
     - [les variables et les types](syntaxe/variables.md)
     - [les opérateurs](syntaxe/operateurs.md)
