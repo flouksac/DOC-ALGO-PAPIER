@@ -7,23 +7,14 @@ developpé par Nils Ponsard ! https://github.com/NilsPonsard/algo-papier-iut-aix
 ____
 
 - qu'est ce qu'un algorithme
-
-- [règles de syntaxe](syntaxe/fondamentaux.md)
-
-- [structure générale d'un algorithme](syntaxe/structure.md)
-
-- [les variables et les types](syntaxe/variables.md)
-
-- [les opérateurs](syntaxe/operateurs.md)
-
-- [les conditions](syntaxe/conditions.md)
-
-- [les boucles](syntaxe/boucles.md)
-
-- les sous-programmes
-
+- Syntaxe
+    - [règles de syntaxe](syntaxe/fondamentaux.md)
+    - [structure générale d'un algorithme](syntaxe/structure.md)
+    - [les variables et les types](syntaxe/variables.md)
+    - [les opérateurs](syntaxe/operateurs.md)
+    - [les conditions](syntaxe/conditions.md)
+    - [les boucles](syntaxe/boucles.md)
+    - les sous-programmes
 - [les méthodes déja présentes](fonctions_existantes.md)
-
 - [Autres choses importantes à noter](autres_a_noter.md)
-
 - [Exemples concrets](exemples/)
