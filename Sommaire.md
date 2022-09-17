@@ -1,4 +1,4 @@
-#SOMMAIRE#
+# SOMMAIRE #
 __________
 
 -> définition de l'algo 
