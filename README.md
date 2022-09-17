@@ -6,7 +6,7 @@ afin de pouvoir visualiser la syntaxe particuliere de ce langage voici une super
 developpé par Nils Ponsard ! https://github.com/NilsPonsard/algo-papier-iut-aix
 ____
 
-- qu'est ce qu'un algorithme
+- [qu'est ce qu'un algorithme]
 - Syntaxe
     - [Fondamentaux](syntaxe/fondamentaux.md)
     - [structure générale d'un algorithme](syntaxe/structure.md)
@@ -14,7 +14,7 @@ ____
     - [les opérateurs](syntaxe/operateurs.md)
     - [les conditions](syntaxe/conditions.md)
     - [les boucles](syntaxe/boucles.md)
-    - les sous-programmes
+    - [les sous-programmes](syntaxe/fonctions.md)
 - [les méthodes déja présentes](fonctions_existantes.md)
 - [Autres choses importantes à noter](autres_a_noter.md)
 - [Exemples concrets](exemples/)
