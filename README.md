@@ -32,23 +32,26 @@ Le camelCase
   la regle étant de rajouter une majuscule a chaque nouveau mot dans la variable, (le premier mot commençant par une minuscule)
   par exemple : uneVariableAvecUnNomVraimentBeaucoupTropLongPourPasGrandChoseAuFinal 
   
-  PS : Mr Casali preferes le camelCase
+  PS : Mr Casali preferes le camelCase, on utilisera d'ailleur le camel case uniquement pour les mots non syntaxique tel que les noms des variables, des procedures,
+  des fonctions ...
   
 Le snake_case
   
   convention de nommage des variables,
   la regle étant de mettre un underscore/tiret du bas ( _ ) entre chaque mots composant une variable
-  par exemple : une_variable_en_snake_case_c_est_plus_aeree_ahah
+  par exemple : une_variable_en_snake_case_c_est_plus_aeree_ah_ah
+  
+  on se sert du snake case uniquement pour les mots syntaxique dans l'algo papier de Mr Casali ( ex: sinon_si,tant_que)
 
 Le // 
 
   le // permet de commenter son algo ( et accessoirement son code )
-  il est crucial de commenter son code, afin de concerver une certaine lisibilité et pour pouvoir maintenir a jour son code ( quand on y revient apres un bon moment )
+  il est crucial de commenter son code, afin de conserver une certaine lisibilité et pour pouvoir maintenir a jour son code ( quand on y revient apres un bon moment )
 
 LE ; 
 
   le ; ou semicolon en anglais est un terminateur, il indique la fin d'une instruction. Il équivaut à un point qui termine une phrase.
-  ici le ; permet de séparé les actions unique, il se met a la fin d'une sequence d'action
+  ici le ; permet de séparé les actions unique, il se met a la fin d'une sequence d'action (ne se met pas a la fin d'une condition, ou d'une boucle)
   
   ```
   Exemple :
@@ -92,7 +95,7 @@ Le FIN
   .     do_something... ;     //
   . fin                      // toujours la derniere ligne , fin de l'algo 
   ```
-PS : ces 3 mots n'apparaissent qu'une seule fois par algorithme
+PS : ces 3 mots n'apparaissent qu'une seule fois par algorithme/sous-programmes
 
 ______________________ 
 
@@ -155,8 +158,8 @@ Le FSI
   
 Le OU
 
-  Opérateur logique conditionnel permettant la création d'une deuxieme condition, fonctionne de la meme maniere qu'un ou logique,
-  et a donc pour table de vérité ->
+  Opérateur logique conditionnel permettant la création d'une deuxieme condition alternative a la premiere, 
+  fonctionne de la meme maniere qu'un ou logique, et a donc pour table de vérité ->
   
   ```
   Table de vérité 
@@ -169,10 +172,12 @@ Le OU
   +-------+---+
   ```
   
+  Nous nous servons du OU logique seulement pour la comparaison de booleen , préférez le OU_SINON dans les conditions (SI, SINON_SI ...)
+  
   ```
   Exemple:
   
-  . si ( ( condition1) ou (condition2) ) // si la condition 1 ou (ou+et) la condition 2 est vrai 
+  . si ( (condition1) ou (condition2) ) // si la condition 1 ou (ou+et) la condition 2 est/sont vrai (si sont, en meme temps) 
   .     do_something... ;               // on fait quelque chose
   . fsi                                // fin du bloc conditionnel
   ```
@@ -185,14 +190,14 @@ Le OU_SINON
   ```
   Exemple:
           //(ici on prend en compte l'ordre d'éxecution, d'abord condition1 puis sinon condition2)
-  . si ( ( condition1) ou_sinon (condition2) ) // si la condition 1 ou (ou+et) la condition 2 est vrai 
+  . si ( (condition1) ou_sinon (condition2) ) // si la condition 1 ou (ou+et) la condition 2 est vrai 
   .     do_something... ;                     // on fait quelque chose
   . fsi                                      // fin du bloc conditionnel
   ```
   
 Le ET
 
-  Opérateur logique condtionnel ET, Permet d'additionner des conditions entre elle, 
+  Opérateur logique condtionnel ET, Permet d'additionner des booleen entre eux, 
   en suivant le fonctionnement du ET logique, et a donc pour table de vérité 
   
   ```
@@ -205,11 +210,13 @@ Le ET
   | 1 . 1 | 1 |
   +-------+---+
   ```
+  
+  Nous nous servons du ET logique seulement pour la comparaison de booleen , préférez le et_alors dans les conditions (SI, SINON_SI ...)
 
   ```
   Exemple:
       
-  . si ( ( condition1) et (condition2) )    // si la condition 1 et la condition 2 est vrai 
+  . si ( ( condition1) et (condition2) )    // si la condition 1 et la condition 2 sont vrai en meme temps
   .     do_something... ;                  // on fait quelque chose
   . fsi                                   // fin du bloc conditionnel
   ```
