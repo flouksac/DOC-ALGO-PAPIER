@@ -37,7 +37,7 @@ ______________________
 ### ALGO ? hein ?? ### 
 ______________________
 
-une algorithme est une séquence d'opérations visant à la résolution d'un problème en un temps fini ( mentionner la condition d'arret )
+un algorithme est une séquence d'opérations visant à la résolution d'un problème en un temps fini ( mentionner la condition d'arret )
 ______________________ 
 
 ###  LA  SYNTAXE  ### 
