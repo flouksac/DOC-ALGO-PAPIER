@@ -5,7 +5,7 @@ ______________________
 Le AFFICHER
 
 la méthode afficher permet d'afficher le contenu de ses parametres a l'écran, elle ne renvoie rien (ne pas confondre afficher/renvoyer)
-
+__
 Le SAISIR
 
 la méthode saisir permet de récupérer une entrée clavier afin d'affecter la valeur rentrée par l'utilisateur dans une variable,
