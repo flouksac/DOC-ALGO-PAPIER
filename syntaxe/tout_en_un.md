@@ -125,6 +125,243 @@ PS : ces 3 mots n'apparaissent qu'une seule fois par algorithme/sous-programmes
 
 ______________________ 
 
+### LES  VARIABLES ### 
+______________________ 
+
+
+La porté des variables
+
+une variable déclaré dans un bloc indenté ( par exemple un bloc debut/fin, si/fsi , faire/ffaire ... ) n'existe qu'a l'interieur de ce bloc
+une variable déclaré a l'interieur d'une condition n'existera plus hors de cette meme condition
+
+Le DECLARER
+
+Permet de déclarer une variable,
+Il est important de déclarer chaque variables avant de leur attribuer des valeurs
+Le mot DECLARER est toujour suivis par un le nom d'une variable, puis ':' et enfin un type primitif
+
+```
+Exemple : 
+
+voir ci-dessous :
+```
+
+Le <-
+
+Le symbole <- permet d'affecter une valeur a une variable, attention a affecté une valeur du même type que la variable initial
+
+```
+Exemple : 
+
+voir ci-dessous :
+```
+
+Le CARACTERE
+
+Type primitif concernant tout type de caractère unique, il est toujours entre guillemets simple (simple quote) 
+Les lettres, les chiffres, les caractères spéciaux tel que \n sont du type primitif 
+
+```
+Exemple : 
+
+. declarer unCaractere : caractere ; // déclaration d'une variable de type caractere 
+. unCaractere <- 'e' ;              // on assigne la valeur 'e' dans la variable
+
+```
+
+Le TABLEAU_DE
+
+Type primitif fonctionnant de la meme maniere qu'une liste, 
+c'est a dire qu'un tableau peut contenir une suite de valeur, d'un meme type prédéfinis lors de sa déclaration, 
+on accede aux elements d'un tableau grace a son indice, les élements d'un tableau sont compris entre 0 et n-1 (avec n qui correspond a la longueur du tableau)
+il est important de spécifier la taille du tableau lors de sa création ( avec le mot DECLARER )
+Un tableau ne contient que des élements d'un seul type. 
+
+```
+Exemple : 
+
+. declarer  tableauEntier  :  tableau_de 3 entier ; // création d'un tableau de longueur 3, contenant exclusivement des entiers
+. tableauEntier[0]  <- 6  ;                        // on assigne a l'emplacement 1 du tableau la valeur 6
+. tableauEntier[1]  <- 6  ;                       //
+. tableauEntier[2]  <- 6  ;                      //
+. afficher ( tableauEntier ) ;                  // envoie a l'écran [6,6,6]
+```
+Le STRING 
+
+Type primitif similaire au tableau, il est la concaténation de plusieurs caractères, 
+un STRING peut donc être une phrase,
+Un mot ou encore une suite de lettres et de chiffres. 
+Sa valeur s'ecrit entre double guillemets (double quotes)
+on peut acceder aux élément d'un string de la meme maniere qu'on accederai aux element d'une liste (TABLEAU_DE)
+
+```
+Exemple : 
+
+. declarer uneChaine : string ; // déclaration d'une variable de type chaine de caracteres
+. uneChaine <- "un mot" ;      // on assigne la valeur 'e' dans la variable
+
+```
+
+Le TABLEAU_DE CARACTERE
+
+  le tableau_de caractere est appellé STRING, voir reference ci-dessus
+
+Le BOOLEEN
+  
+  Le booleen est un type primitif, qui a seulement deux états; VRAI ou FAUX , il est souvent utilisé pour verifier et tester des égalités lors de conditions
+  un booleen peut se trouver seul dans une condition, on rentrera donc dans le bloc conditionnel lorsque le booleen est dans l'état VRAI
+  Il est possible d'inverser un booleen avec l'instruction NON ( booleen )
+  
+```
+Exemple : 
+
+. declarer toBe : booleen ;
+. declarer notToBe : booleen ;
+. declarer question : booleen ;
+. toBe <- faux ;                  // on donne comme a toBe l'état faux
+. notToBe <- NON toBe ;          // vrai
+. question <- toBe OU notToBe ; // toujours vrai !
+
+```
+
+L' ENTIER
+  
+  le type primitif entier désigne tout les entier positif et negatif, il ne possede pas de partie décimale
+  
+```
+Exemple : 
+
+. declarer unEntier : entier ;
+. unEntier <- -5 ;
+
+```
+
+L' ENTIER_NATUREL 
+
+  similaire a l'ENTIER mais strictement positif
+
+```
+Exemple : 
+
+. declarer unEntierNaturel : entier_naturel ;
+. unEntierNaturel <-  5 ;
+
+```
+
+Le REEL
+
+  Un nombre positif ou négatif, pouvant contenir une partie décimale
+
+```
+Exemple : 
+
+. declarer unReel : reel ;
+. unReel <- 5.61 ;
+
+```
+
+La KONSTANTE
+  
+  une constante est de n'importe quel type primitif mais possede la propriété de ne jamais changer,
+  de son initiation a la fin de l'algorithme la valeur attribué a la constante restera toujours la meme.
+  On rajoutera la lettre K devant le nom de la variable afin de pouvoir les idenditifiés plus facilement.
+
+```
+Exemple : 
+
+. declarer KapproximationPi : constante  reel <- 3.14 ;     //on notera qu'on ne peut plus changer KapproximationPi apres cela
+
+```
+
+______________________ 
+
+### LES OPERATEURS ### 
+______________________
+
+Le VRAI
+  
+  Un des deux états possiblent pour un booléen, VRAI étant l'état d'une condition positive
+
+Le FAUX
+
+  Un des deux états possiblent pour un booléen, FAUX étant l'état lorsqu'une condition est négative/fausse
+
+
+```
+Exemple : 
+
+. si ( vrai )          // si (vrai) n'est pas reelement utile ici, mais une variable de 
+.   do_something... ; // type booleen pourrait remplacer, vrai, et selon son état
+. fsi                // on rentrerai dans la condition et executerai le do_something ou non
+
+Exemple : 
+
+. si ( faux )               // on ne rentrera jamais dans le si a cause du faux 
+.   do_something... ;      // on ne fait donc pas ca, et on passe directement au sinon
+. sinon
+.   do_something_else... ;
+. fsi
+
+```
+
+Le VAUT
+
+  Opérateur permettant de verifier si deux valeurs valent la meme chose, compairason d'égalité.
+
+Le NE_VAUT_PAS
+  
+  Opérateur permettant de verifier l'inégalité, est le contraire du VAUT.
+
+```
+Exemple : 
+
+. si ( monEntier vaut 1 ) 
+.     afficher ("monEntier vaudrait vraiment 1 !")
+.   sinon_si ( monEntier ne_vaut_pas 2 )
+.     afficher ("monEntier ne vaudrait donc pas 2 !")
+.   sinon 
+.     afficher ("monEntier vaudrait donc 2 !")
+. fsi
+
+```
+
+Le <
+
+  Opérateur comparatif, signifie plus petit que, le symbole < est encadré par deux valeurs
+
+Le >
+
+  Opérateur comparatif, signifie plus grand que, le symbole > est encadré par deux valeurs
+
+```
+Exemple :
+
+. si ( 1 > 2 )                // si 1 est supérieur a 2 (faux)
+.     do_something ;         // on fait quelque chose
+.   sinon_si (2 < 3) :      // sinon si 2 est inferieur a 3 (vrai)
+.     do_something_esle;   // on fait autre chose
+. fsi
+```
+
+Le <=
+
+   Opérateur comparatif, signifie plus petit ou égal a, le symbole <= est encadré par deux valeurs
+
+Le >=
+
+  Opérateur comparatif, signifie plus grand ou égal a, le symbole > est encadré par deux valeurs
+
+```
+Exemple :
+
+. si ( 8 >= 9-3 )            // si 8 est superieur ou égal a 9-3 (vrai)
+.     do_something ;        // on fait quelque chose
+.   sinon_si (7 <= 120) :  // sinon si 7 est inferieur ou égal a 120 (vrai, mais on n'y rentre pas)
+.     do_something_esle;  // on fait autre chose
+. fsi
+```
+______________________
+
 ### LES CONDITIONS ### 
 ______________________ 
 
@@ -447,243 +684,121 @@ Exemple :
 . ffaire                                              // fin bloc faire
 ```
 
-______________________ 
-
-### LES OPERATEURS ### 
 ______________________
 
-Le VRAI
-  
-  Un des deux états possiblent pour un booléen, VRAI étant l'état d'une condition positive
+### LES SOUS-PROGRAMMES ### 
+______________________
 
-Le FAUX
+La PROCEDURE
 
-  Un des deux états possiblent pour un booléen, FAUX étant l'état lorsqu'une condition est négative/fausse
+permet d'éxecuté une séquence d'instruction lors de son appel,  
 
+une procedure a toujours un identificateur ( son nom ), des conditions d'utilisation propre a elle meme, 
+eventuellement des paramètres ( des sortes d'ingrédients a lui fournir en amont, avec lesquels elle va travailler )
+on pourrait interpreter la liste de ses paramètres comme un "guichet" de communication entre le monde exterieur et l'interieur du sous-programme (portés des variables)
 
-```
-Exemple : 
+elle produit eventuellement un résultat
 
-. si ( vrai )          // si (vrai) n'est pas reelement utile ici, mais une variable de 
-.   do_something... ; // type booleen pourrait remplacer, vrai, et selon son état
-. fsi                // on rentrerai dans la condition et executerai le do_something ou non
-
-Exemple : 
-
-. si ( faux )               // on ne rentrera jamais dans le si a cause du faux 
-.   do_something... ;      // on ne fait donc pas ca, et on passe directement au sinon
-. sinon
-.   do_something_else... ;
-. fsi
-
-```
-
-Le VAUT
-
-  Opérateur permettant de verifier si deux valeurs valent la meme chose, compairason d'égalité.
-
-Le NE_VAUT_PAS
-  
-  Opérateur permettant de verifier l'inégalité, est le contraire du VAUT.
-
-```
-Exemple : 
-
-. si ( monEntier vaut 1 ) 
-.     afficher ("monEntier vaudrait vraiment 1 !")
-.   sinon_si ( monEntier ne_vaut_pas 2 )
-.     afficher ("monEntier ne vaudrait donc pas 2 !")
-.   sinon 
-.     afficher ("monEntier vaudrait donc 2 !")
-. fsi
-
-```
-
-Le <
-
-  Opérateur comparatif, signifie plus petit que, le symbole < est encadré par deux valeurs
-
-Le >
-
-  Opérateur comparatif, signifie plus grand que, le symbole > est encadré par deux valeurs
+elle sert a "mettre en facteur" du code, s'est a dire permettre d'écrire une seule fois une séquence d'instructions souvent utilisée.
+cette séquence d'instructions s'executera quand la procedure sera appelé,
 
 ```
 Exemple :
 
-. si ( 1 > 2 )                // si 1 est supérieur a 2 (faux)
-.     do_something ;         // on fait quelque chose
-.   sinon_si (2 < 3) :      // sinon si 2 est inferieur a 3 (vrai)
-.     do_something_esle;   // on fait autre chose
-. fsi
+. procedure afficherNFoisBonjour 
+.                     ( n : in entier_naturel )
+.                     //n (l'indicateur du parametre)
+.                     //in (marqueur : parametre "donnée")
+.                     //entier_naturel (type)
+. debut
+.     pour (i variant_de 1 a n )
+.     faire
+.         afficher ("Bonjour");
+.     ffaire
+. fin
+
 ```
 
-Le <=
+```
 
-   Opérateur comparatif, signifie plus petit ou égal a, le symbole <= est encadré par deux valeurs
+. declarer nbFois : entier_naturel;
+. nbFois <- 12;
+. afficherNFoisBonjour (nbFois);
 
-Le >=
+```
 
-  Opérateur comparatif, signifie plus grand ou égal a, le symbole > est encadré par deux valeurs
+la procedure permet de remplacer une suite d'actions élémentaire par une seule action de "haut niveau"
+
+par exemple :
+```
+-afficher l'écran d'accueil
+-établir une connexion
+-saisir login/password
+-charger les images
+-interroger une base de données
+```
+
+La FONCTION
+
+une fonction est une procédure qui a au moins un paramètre out, 
+la fonction correspondante renvoie alors ce paramètre out
+
+```
+Exemple : un sous-programme qui
+          reçoit un nombre réel,
+          calcule sa racine carrée
+
+en procédure :
+
+. procedure sqrt (valInit : in reel, 
+.                 result : out reel);
+                
+en fonction :
+
+. fonction sqrt (valInit : in reel) 
+.                renvoie reel;
+
+Exemple d'utilisation : 
+
+. declarer Rac_12 : reel;
+. Rac_12 <- sqrt (12.0);
+```
+
+Le predicat est une fonction qui renvoie un booleen,
+(on choisi un identificateur qui commence par "is"/"has"/"are" (pour est, a, sont) )
 
 ```
 Exemple :
 
-. si ( 8 >= 9-3 )            // si 8 est superieur ou égal a 9-3 (vrai)
-.     do_something ;        // on fait quelque chose
-.   sinon_si (7 <= 120) :  // sinon si 7 est inferieur ou égal a 120 (vrai, mais on n'y rentre pas)
-.     do_something_esle;  // on fait autre chose
-. fsi
-```
+. fonction isMultiple (entier1 : in entier,
+.                      entier2 : in entier)
+.                      renvoie booleen
+. debut
+.     si (modulo (entier1, entier2) vaut 0)
+.         renvoie vrai;
+.     sinon
+.         renvoie faux;
+.     fsi
+. fin
 
-______________________ 
-
-### LES  VARIABLES ### 
-______________________ 
-
-
-La porté des variables
-
-une variable déclaré dans un bloc indenté ( par exemple un bloc debut/fin, si/fsi , faire/ffaire ... ) n'existe qu'a l'interieur de ce bloc
-une variable déclaré a l'interieur d'une condition n'existera plus hors de cette meme condition
-
-Le DECLARER
-
-Permet de déclarer une variable,
-Il est important de déclarer chaque variables avant de leur attribuer des valeurs
-Le mot DECLARER est toujour suivis par un le nom d'une variable, puis ':' et enfin un type primitif
-
-```
-Exemple : 
-
-voir ci-dessous :
-```
-
-Le <-
-
-Le symbole <- permet d'affecter une valeur a une variable, attention a affecté une valeur du même type que la variable initial
-
-```
-Exemple : 
-
-voir ci-dessous :
-```
-
-Le CARACTERE
-
-Type primitif concernant tout type de caractère unique, il est toujours entre guillemets simple (simple quote) 
-Les lettres, les chiffres, les caractères spéciaux tel que \n sont du type primitif 
-
-```
-Exemple : 
-
-. declarer unCaractere : caractere ; // déclaration d'une variable de type caractere 
-. unCaractere <- 'e' ;              // on assigne la valeur 'e' dans la variable
 
 ```
 
-Le TABLEAU_DE
+Le RENVOIE
 
-Type primitif fonctionnant de la meme maniere qu'une liste, 
-c'est a dire qu'un tableau peut contenir une suite de valeur, d'un meme type prédéfinis lors de sa déclaration, 
-on accede aux elements d'un tableau grace a son indice, les élements d'un tableau sont compris entre 0 et n-1 (avec n qui correspond a la longueur du tableau)
-il est important de spécifier la taille du tableau lors de sa création ( avec le mot DECLARER )
-Un tableau ne contient que des élements d'un seul type. 
+  permet de renvoyer une valeur depuis une fonction 
 
-```
-Exemple : 
+Le IN
 
-. declarer  tableauEntier  :  tableau_de 3 entier ; // création d'un tableau de longueur 3, contenant exclusivement des entiers
-. tableauEntier[0]  <- 6  ;                        // on assigne a l'emplacement 1 du tableau la valeur 6
-. tableauEntier[1]  <- 6  ;                       //
-. tableauEntier[2]  <- 6  ;                      //
-. afficher ( tableauEntier ) ;                  // envoie a l'écran [6,6,6]
-```
-Le STRING 
+  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce meme marqueur) ne subira pas de modification dans le sous programme
 
-Type primitif similaire au tableau, il est la concaténation de plusieurs caractères, 
-un STRING peut donc être une phrase,
-Un mot ou encore une suite de lettres et de chiffres. 
-Sa valeur s'ecrit entre double guillemets (double quotes)
-on peut acceder aux élément d'un string de la meme maniere qu'on accederai aux element d'une liste (TABLEAU_DE)
+Le IN_OUT
 
-```
-Exemple : 
+  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce meme marqueur) pourrait subir une modification dans le sous programme
 
-. declarer uneChaine : string ; // déclaration d'une variable de type chaine de caracteres
-. uneChaine <- "un mot" ;      // on assigne la valeur 'e' dans la variable
+Le OUT
 
-```
-
-Le TABLEAU_DE CARACTERE
-
-  le tableau_de caractere est appellé STRING, voir reference ci-dessus
-
-Le BOOLEEN
-  
-  Le booleen est un type primitif, qui a seulement deux états; VRAI ou FAUX , il est souvent utilisé pour verifier et tester des égalités lors de conditions
-  un booleen peut se trouver seul dans une condition, on rentrera donc dans le bloc conditionnel lorsque le booleen est dans l'état VRAI
-  Il est possible d'inverser un booleen avec l'instruction NON ( booleen )
-  
-```
-Exemple : 
-
-. declarer toBe : booleen ;
-. declarer notToBe : booleen ;
-. declarer question : booleen ;
-. toBe <- faux ;                  // on donne comme a toBe l'état faux
-. notToBe <- NON toBe ;          // vrai
-. question <- toBe OU notToBe ; // toujours vrai !
-
-```
-
-L' ENTIER
-  
-  le type primitif entier désigne tout les entier positif et negatif, il ne possede pas de partie décimale
-  
-```
-Exemple : 
-
-. declarer unEntier : entier ;
-. unEntier <- -5 ;
-
-```
-
-L' ENTIER_NATUREL 
-
-  similaire a l'ENTIER mais strictement positif
-
-```
-Exemple : 
-
-. declarer unEntierNaturel : entier_naturel ;
-. unEntierNaturel <-  5 ;
-
-```
-
-Le REEL
-
-  Un nombre positif ou négatif, pouvant contenir une partie décimale
-
-```
-Exemple : 
-
-. declarer unReel : reel ;
-. unReel <- 5.61 ;
-
-```
-
-La KONSTANTE
-  
-  une constante est de n'importe quel type primitif mais possede la propriété de ne jamais changer,
-  de son initiation a la fin de l'algorithme la valeur attribué a la constante restera toujours la meme.
-  On rajoutera la lettre K devant le nom de la variable afin de pouvoir les idenditifiés plus facilement.
-
-```
-Exemple : 
-
-. declarer KapproximationPi : constante  reel <- 3.14 ;     //on notera qu'on ne peut plus changer KapproximationPi apres cela
-
-```
+  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce meme marqueur) subira une modification obligatoire dans le sous programme
 
 ______________________ 
 
@@ -809,120 +924,4 @@ Le RAND ( x , y )
 
 Retourne un entier aléatoire dans l’intervalle [ x , y ]
 
-
-______________________
-
-### LES SOUS-PROGRAMMES ### 
-______________________
-
-La PROCEDURE
-
-permet d'éxecuté une séquence d'instruction lors de son appel,  
-
-une procedure a toujours un identificateur ( son nom ), des conditions d'utilisation propre a elle meme, 
-eventuellement des paramètres ( des sortes d'ingrédients a lui fournir en amont, avec lesquels elle va travailler )
-on pourrait interpreter la liste de ses paramètres comme un "guichet" de communication entre le monde exterieur et l'interieur du sous-programme (portés des variables)
-
-elle produit eventuellement un résultat
-
-elle sert a "mettre en facteur" du code, s'est a dire permettre d'écrire une seule fois une séquence d'instructions souvent utilisée.
-cette séquence d'instructions s'executera quand la procedure sera appelé,
-
-```
-Exemple :
-
-. procedure afficherNFoisBonjour 
-.                     ( n : in entier_naturel )
-.                     //n (l'indicateur du parametre)
-.                     //in (marqueur : parametre "donnée")
-.                     //entier_naturel (type)
-. debut
-.     pour (i variant_de 1 a n )
-.     faire
-.         afficher ("Bonjour");
-.     ffaire
-. fin
-
-```
-
-```
-
-. declarer nbFois : entier_naturel;
-. nbFois <- 12;
-. afficherNFoisBonjour (nbFois);
-
-```
-
-la procedure permet de remplacer une suite d'actions élémentaire par une seule action de "haut niveau"
-
-par exemple :
-```
--afficher l'écran d'accueil
--établir une connexion
--saisir login/password
--charger les images
--interroger une base de données
-```
-
-La FONCTION
-
-une fonction est une procédure qui a au moins un paramètre out, 
-la fonction correspondante renvoie alors ce paramètre out
-
-```
-Exemple : un sous-programme qui
-          reçoit un nombre réel,
-          calcule sa racine carrée
-
-en procédure :
-
-. procedure sqrt (valInit : in reel, 
-.                 result : out reel);
-                
-en fonction :
-
-. fonction sqrt (valInit : in reel) 
-.                renvoie reel;
-
-Exemple d'utilisation : 
-
-. declarer Rac_12 : reel;
-. Rac_12 <- sqrt (12.0);
-```
-
-Le predicat est une fonction qui renvoie un booleen,
-(on choisi un identificateur qui commence par "is"/"has"/"are" (pour est, a, sont) )
-
-```
-Exemple :
-
-. fonction isMultiple (entier1 : in entier,
-.                      entier2 : in entier)
-.                      renvoie booleen
-. debut
-.     si (modulo (entier1, entier2) vaut 0)
-.         renvoie vrai;
-.     sinon
-.         renvoie faux;
-.     fsi
-. fin
-
-
-```
-
-Le RENVOIE
-
-  permet de renvoyer une valeur depuis une fonction 
-
-Le IN
-
-  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce meme marqueur) ne subira pas de modification dans le sous programme
-
-Le IN_OUT
-
-  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce meme marqueur) pourrait subir une modification dans le sous programme
-
-Le OUT
-
-  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce meme marqueur) subira une modification obligatoire dans le sous programme
 
