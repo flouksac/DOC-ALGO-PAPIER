@@ -779,7 +779,7 @@ Retourne un entier aléatoire dans l’intervalle [ x , y ]
 
 ______________________
 
-### LES  FONCTIONS ### 
+### LES SOUS-PROGRAMMES ### 
 ______________________
 
 La PROCEDURE
@@ -800,9 +800,9 @@ Exemple :
 
 . procedure afficherNFoisBonjour 
 .                     ( n : in entier_naturel )
-.                     //n est l'indicateur du parametre
-.                     //in , marqueur : parametre "donnée"
-.                     // et enfin son type
+.                     //n (l'indicateur du parametre)
+.                     //in (marqueur : parametre "donnée")
+.                     //entier_naturel (type)
 . debut
 .     pour (i variant_de 1 a n )
 .     faire
@@ -820,8 +820,6 @@ Exemple :
 
 ```
 
-
-
 la procedure permet de remplacer une suite d'actions élémentaire par une seule action de "haut niveau"
 
 par exemple :
@@ -832,7 +830,6 @@ par exemple :
 -charger les images
 -interroger une base de données
 ```
-
 
 La FONCTION
 
@@ -886,15 +883,15 @@ Le RENVOIE
 
 Le IN
 
-  mot se trouvant dans les arguments d'une procédure ou d'une fonction, permet de déclarer un argument/un parametre utilisé dans une procedure
+  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce meme marqueur) ne subira pas de modification dans le sous programme
 
 Le IN_OUT
 
-  mot pour déclarer un argument/parametre d'une procedure utilisé et en entrée en en sortie 
+  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce meme marqueur) pourrait subir une modification dans le sous programme
 
 Le OUT
 
-  le mot out permet de définir une variable sortante qui sera retourner par une procédure 
+  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce meme marqueur) subira une modification obligatoire dans le sous programme
 
 ```
 
