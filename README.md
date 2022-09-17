@@ -8,6 +8,19 @@ https://github.com/NilsPonsard/algo-papier-iut-aix
 
 ______________________ 
 
+### SOMMAIRE ### 
+______________________
+
+-> définition de l'algo
+-> règles de syntaxe
+-> structure général de l'algorithme
+-> les conditions
+-> les boucles
+-> les opérateurs
+-> les variables et leurs types
+-> les sous-programmes
+______________________ 
+
 ### ALGO ? hein ?? ### 
 ______________________
 
