@@ -504,6 +504,16 @@ Le NON
   Opérateur logique conditionnel permettant d'exprimer la negation / l'inverse d'une condition succedant le NON
   
   ```
+  Table de vérité 
+  Non
+  +---+---+
+  | 0 | 1 |
+  | 1 | 0 |
+  +---+---+
+  ```
+  
+  
+  ```
   Exemple:
   . si ( NON ( condition1 ) )      // si la condition n'est pas vrai
   .     do_something ... ;        // on fait quelque chose
