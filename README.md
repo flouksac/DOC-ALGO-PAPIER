@@ -824,13 +824,14 @@ Exemple :
 
 la procedure permet de remplacer une suite d'actions élémentaire par une seule action de "haut niveau"
 
-exemple : 
+par exemple :
+```
 -afficher l'écran d'accueil
 -établir une connexion
 -saisir login/password
 -charger les images
 -interroger une base de données
-
+```
 
 
 La FONCTION
@@ -881,11 +882,19 @@ Exemple :
 
 Le RENVOIE
 
+  permet de renvoyer une valeur depuis une fonction 
+
 Le IN
+
+  mot se trouvant dans les arguments d'une procédure ou d'une fonction, permet de déclarer un argument/un parametre utilisé dans une procedure
 
 Le IN_OUT
 
+  mot pour déclarer un argument/parametre d'une procedure utilisé et en entrée en en sortie 
+
 Le OUT
+
+  le mot out permet de définir une variable sortante qui sera retourner par une procédure 
 
 ```
 
