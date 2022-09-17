@@ -1,5 +1,5 @@
 # SOMMAIRE #
-__________
+
 
 -> définition de l'algo 
 
