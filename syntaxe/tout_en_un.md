@@ -1,3 +1,5 @@
+[Retour au sommaire](../README.md)
+
 # DOC-ALGO-PAPIER #
 
 Dans ce repo vous trouverez un manuel détaillé de la syntaxe strict de l'algo papier selon Mr Casali 

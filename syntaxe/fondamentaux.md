@@ -1,3 +1,5 @@
+[Retour au sommaire](../README.md)
+
 ###  LA  SYNTAXE  ### 
 ______________________
 
