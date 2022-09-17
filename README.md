@@ -1,13 +1,10 @@
 # SOMMAIRE #
 
-Dans ce repo vous trouverez un manuel détaillé de la syntaxe strict de l'algo papier selon Mr Casali
-
-afin de pouvoir visualiser la syntaxe particuliere de ce langage voici une super extension pour visual studio code, 
-developpé par Nils Ponsard ! https://github.com/NilsPonsard/algo-papier-iut-aix
+Dans ce repository vous trouverez un manuel détaillé de la syntaxe de l'algorithme papier selon Mr Casali
 ____
 
 - [qu'est ce qu'un algorithme](syntaxe/algo.md)
-- Syntaxe
+- [Syntaxe](syntaxe/)
     - [Fondamentaux](syntaxe/fondamentaux.md)
     - [structure générale d'un algorithme](syntaxe/structure.md)
     - [les variables et leur types](syntaxe/variables.md)
