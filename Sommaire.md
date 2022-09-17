@@ -1,20 +1,24 @@
 # SOMMAIRE #
 
 
--> qu'est ce qu'un algorithme 
+- qu'est ce qu'un algorithme 
 
--> règles de syntaxe 
+- règles de syntaxe 
 
--> structure général de l'algorithme 
+- structure général de l'algorithme 
 
--> les variables et leurs types 
+- les variables et leurs types 
 
--> les opérateurs 
+- les opérateurs 
 
--> les conditions 
+- les conditions 
 
--> les boucles 
+- les boucles 
 
--> les sous-programmes
+- les sous-programmes
 
--> les méthodes spéciales
+- les méthodes spéciales
+
+- Autres choses importantes à noter
+
+- Exemples concrets
