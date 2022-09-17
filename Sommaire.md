@@ -1,7 +1,7 @@
 # SOMMAIRE #
 
 
--> définition de l'algo 
+-> qu'est ce qu'un algorithme 
 
 -> règles de syntaxe 
 
