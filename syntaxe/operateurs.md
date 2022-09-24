@@ -5,11 +5,12 @@ ______________________
 
 Le VRAI
   
-  Un des deux états possiblent pour un booléen, VRAI étant l'état d'une condition positive
-
+  Un des deux états possibles pour un booléen, VRAI étant l'état d'une condition positive
+  
 Le FAUX
 
-  Un des deux états possiblent pour un booléen, FAUX étant l'état lorsqu'une condition est négative/fausse
+  Un des deux états possibles pour un booléen, FAUX étant l'état lorsqu'une condition est négative/fausse
+
 
 
 ```
@@ -31,11 +32,13 @@ Exemple :
 
 Le VAUT
 
-  Opérateur permettant de verifier si deux valeurs valent la meme chose, compairason d'égalité.
+  Opérateur permettant de vérifier si deux valeurs valent la même chose, comparaison d'égalité.
+
 
 Le NE_VAUT_PAS
   
-  Opérateur permettant de verifier l'inégalité, est le contraire du VAUT.
+  Opérateur permettant de vérifier l'inégalité, est le contraire du VAUT.
+
 
 ```
 Exemple : 
