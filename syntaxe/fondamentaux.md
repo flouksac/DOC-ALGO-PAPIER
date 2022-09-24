@@ -34,7 +34,7 @@ Le //
   le // permet de commenter son algo ( et accessoirement son code )
   il est crucial de commenter son code, afin de conserver une certaine lisibilité et pour pouvoir maintenir à jour son code ( quand on y revient après un bon moment )
 
-LE ; 
+Le ; 
 
   le ; ou semicolon en anglais est un terminateur, il indique la fin d'une instruction. Il équivaut à un point qui termine une phrase.
   ici le ; permet de séparé les actions uniques, il se met à la fin d'une séquence d'action (ne se met pas à la fin d'une condition, ou d'une boucle)
