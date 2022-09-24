@@ -9,12 +9,11 @@ L' ALGORITHME
  
 Le DEBUT
 
-  le second mot qui devrait apparaitre, permet de marquer le début d'un algorithme, d'un programme ou d'un sous programme
+  le second mot qui devrait apparaitre, permet de marquer le début d'un algorithme, d'un programme ou d'un sous-programme
    
 Le FIN
 
-  le dernier mot qui devrait apparaitre, permet de marquer la fin d'un algorithme, d'un programme ou d'un sous programme
- 
+  le dernier mot qui devrait apparaitre, permet de marquer la fin d'un algorithme, d'un programme ou d'un sous-programme 
   ```
   Exemple :
   
@@ -23,4 +22,4 @@ Le FIN
   .     do_something... ;     //
   . fin                      // toujours la derniere ligne , fin de l'algo 
   ```
-PS : ces 3 mots n'apparaissent qu'une seule fois par algorithme/sous-programmes
+PS : ces 3 mots n'apparaissent qu'une seule fois par algorithmes/sous-programmes
