@@ -6,9 +6,9 @@ ______________________
 Le SI
 
   l'opérateur conditionnel SI permet d'exprimer la condition, 
-  il contient une condition entre parantheses , 
-  la condition est soit vrai, soit fausse,
-  il n'exite pas d'autre état, l'operateur SI est suivi d'instructions et peut etre succédé par d'autres conditions 
+  il contient une condition entre parenthèses , 
+  la condition est soit vraie, soit fausse,
+  il n'existe pas d'autre état, l'opérateur SI est suivi d'instructions et peut-être succédé par d'autres conditions 
   lorsque nous quittons le bloc conditionnel le mot FSI ferme le test
   
   ```
@@ -37,7 +37,7 @@ Le SINON
 Le SINON_SI
 
   Permet une alternative a la condition SI, en rajoutant sa propre condition
-  de la meme maniere qu'un SI
+  de la même manière qu'un SI
   
   ```
   Exemple :
@@ -52,15 +52,15 @@ Le SINON_SI
 Le FSI
 
   Ferme le bloc conditionnel SI. il doit y avoir autant de fsi que de SI
-  Le FSI est au meme niveau d'indentation que le SI qui le préccede 
+  Le FSI est au même niveau d'indentation que le SI qui le précède 
   
   ``` Exemple : voir plus haut ```
   
   
 Le OU
 
-  Opérateur logique conditionnel permettant la création d'une deuxieme condition alternative a la premiere, 
-  fonctionne de la meme maniere qu'un ou logique, et a donc pour table de vérité ->
+  Opérateur logique conditionnel permettant la création d'une deuxième condition alternative a la première, 
+  fonctionne de la même manière qu'un ou logique, et a donc pour table de vérité ->
   
   ```
   Table de vérité 
@@ -85,7 +85,7 @@ Le OU
   
 Le OU_SINON
 
-  Opérateur logique conditionnel ayant le meme fonctionnement logique que le OU, mais qui prend en compte l'ordre d'éxecution, et qui convient donc
+  Opérateur logique conditionnel ayant le même fonctionnement logique que le OU, mais qui prend en compte l'ordre d'exécution, et qui convient donc
   mieux dans une succession de condition
   
   ```
@@ -98,7 +98,7 @@ Le OU_SINON
   
 Le ET
 
-  Opérateur logique condtionnel ET, Permet d'additionner des booleen entre eux, 
+  Opérateur logique conditionnel ET, Permet d'additionner des booléens entre eux, 
   en suivant le fonctionnement du ET logique, et a donc pour table de vérité 
   
   ```
@@ -125,10 +125,9 @@ Le ET
 
 Le ET_ALORS
    
-  Opérateur logique condtionnel ET, Permet d'additionner des conditions entre elle tout comme le ET 
-  mais qui prend en compte l'ordre d'éxecution, et qui convient donc 
-  mieux dans une succession de contidition
-
+  Opérateur logique conditionnel ET, Permet d'additionner des conditions entre elles tout comme le ET 
+  mais qui prend en compte l'ordre d'exécution, et qui convient donc 
+  mieux dans une succession de condition
   ```
   Exemple:
           //(ici on prend en compte l'ordre d'éxecution, d'abord condition1 et ensuite condition2)
@@ -139,8 +138,7 @@ Le ET_ALORS
 
 Le NON
   
-  Opérateur logique conditionnel permettant d'exprimer la negation / l'inverse d'une condition succedant le NON
-  
+  Opérateur logique conditionnel permettant d'exprimer la négation / l'inverse d'une condition succédant le NON  
   ```
   Exemple:
   . si ( NON ( condition1 ) )      // si la condition n'est pas vrai
@@ -149,20 +147,20 @@ Le NON
   ```
 Le CHOIX_SUR x ENTRE
 
-  switch permettant de comparer une variable directement avec different CAS definit a la suite du CHOIX_SUR d_une_variable ENTRE
-  similaire a une succession de si, sinon_si dans le but de comparé une seule variable
+  switch permettant de comparer une variable directement avec différent CAS définit à la suite du CHOIX_SUR d'une variable ENTRE
+  similaire a une succession de si, sinon_si dans le but de comparer une seule variable
 
 Le CAS valeur :
 
-  permet de definir un CAS a comparé avec une variable 
-
+  permet de définir un CAS à comparer avec une variable 
+  
 Le AUTRE :
   
-  permet de definir le CAS execption
+  permet de définir le CAS d'exception
 
 Le FCHOIX
   
-  ferme le switch CHOIX_SUR, et possede la meme indentation que le CHOIX_SUR qu'il complete
+  ferme le switch CHOIX_SUR, et possède la même indentation que le CHOIX_SUR qu'il complète
   
   ```
   Exemple : 
@@ -176,5 +174,4 @@ Le FCHOIX
   .     do_something_else2... ;
   . fchoix
   ```
-PS : les CAS se termine par un : et le CHOIX_SUR precede le mot ENTRE
-  
+PS : les CAS se termine par un : et le CHOIX_SUR précède le mot ENTRE  
