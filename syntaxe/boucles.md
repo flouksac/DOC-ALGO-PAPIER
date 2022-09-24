@@ -5,12 +5,15 @@ ______________________
 
 La BOUCLE
  
-permet l'initiation d'une boucle infinit, ce qui sera contenu entre la BOUCLE et le FBOUCLE sera exécuté a l'infini, 
-si il n'y pas de condition d'arret utilisant l'instruction SORTIE
+permet l'initiation d'une boucle infinie, ce qui sera contenu entre la BOUCLE et le FBOUCLE sera exécuté à l'infini, 
+S'il n'y a pas de condition d'arrêt utilisant l'instruction SORTIE
+
+
 
 La FBOUCLE
 
-ferme la zone de la boucle, et s'indente au meme niveau, similaire au FSI qui ferme le bloc conditionnel du SI, mais dans le cas de la BOUCLE
+ferme la zone de la boucle, et s'indente au même niveau, similaire au FSI qui ferme le bloc conditionnel du SI, mais dans le cas de la BOUCLE
+
 
 ```
 Exemple :
@@ -33,12 +36,12 @@ et une deuxieme avec une condition d'arret,
 
 Le REPETER
   
-  permet de rentrer dans une boucle ou nous allons REPETER une suite d'instruction JUSQUA atteindre une condition d'arret/de sortie
+  permet de rentrer dans une boucle où nous allons REPETER une suite d'instructions JUSQUA atteindre une condition d'arret/de sortie
   
 Le JUSQUA
 
-  exprime la condition de sortie lorsqu'une condition est vrai,
-  lorsque le jusqua n'est pas précédé par le mot REPETER il faut délimiter le bloc de la boucle par les instructions FAIRE et FFAIRE
+  exprime la condition de sortie lorsqu'une condition est vraie,
+  lorsque le jusqu'à n'est pas précédé par le mot REPETER il faut délimiter le bloc de la boucle par les instructions FAIRE et FFAIRE
 
 ```
 Exemple : 
@@ -68,8 +71,9 @@ Le FFAIRE
 
 Le TANT_QUE
 
-  boucle tant_que, qui va continuer son execution tant que la condition est vrai, (on remarque d'ailleur qu'elle est l'inverse de la boucle jusqua)
-  elle peut commencer par l'instruction REPETER et finir par TANT_QUE ou etre délimité par FAIRE et FFAIRE
+  boucle tant_que, qui va continuer son exécution tant que la condition est vraie, (on remarque d'ailleurs qu'elle est l'inverse de la boucle jusqu'à)
+  elle peut commencer par l'instruction REPETER et finir par TANT_QUE ou être délimité par FAIRE et FFAIRE
+
 
 ```
 Exemple : 
@@ -83,21 +87,21 @@ Exemple :
 
 Le POUR
 
-permet de creer une boucle a compteur, elle se combine au VARIANT_DE x A y, il s'agit d'une boucle qui s'auto incrémente, 
-(sauf cas contraite car elle peut aussi décrémenté, voir mot DESCENDANT), 
+permet de créer une boucle à compteur, elle se combine au VARIANT_DE x A y, il s'agit d'une boucle qui s'autoincrémente, 
+(sauf cas contraire car elle peut aussi décrémenter, voir mot DESCENDANT), 
 en programmation comme en pseudo-code, 
-on a l'habitude de donner pour nom a notre compteur 'i', puis 'j','k'...
+on a l'habitude de donner pour nom à notre compteur 'i', puis 'j','k'...
 
 Règles : Dans une boucle pour, la variable de parcours doit prendre
-toutes les valeurs entre les bornes minimale et maximale (incluses).
+toutes les valeurs entre les bornes minimales et maximales (incluses).
 Aucune rupture de séquence utilisant une instruction sortie n’est
 permise. 
-l'usage de SORTIE, est interdite, mais celle de CONTINUE, est "légal"
+l'usage de SORTIE, est interdit, mais celle de CONTINUE, est "légal"
 
 Le VARIANT_DE x A y 
 
 cette instruction permet la gestion d'un compteur au sein d'une boucle,
-le compteur variant de x a y, le compteur se déclarera directement dans le variant ( initialiser a x)
+le compteur variant de x a y, le compteur se déclarera directement dans le variant ( initialiser à x)
 
 ```
 Exemple : 
@@ -111,11 +115,11 @@ Exemple :
 
 Le SORTIE
 
-permet la sortie d'une boucle lors de son execution, souvent couplé a une condition, ( qu'on appelle condition de sortie )
+permet la sortie d'une boucle lors de son exécution, souvent couplé avec une condition, ( qu'on appelle condition de sortie )
 
 Le CONTINUE
 
-permet de revenir au début de la boucle ( au niveau du faire, ou du repeter ) 
+permet de revenir au début de la boucle ( au niveau du FAIRE, ou du REPETER ) 
 
 ```
 Exemple :
@@ -130,7 +134,7 @@ Exemple :
 
 Le DESCANDANT
 
-instruction permettant a la boucle POUR de décrémenté son indice,
+instruction permettant a la boucle POUR de décrémenter son indice,
 
 ```
 Exemple :
