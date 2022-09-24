@@ -5,16 +5,16 @@ ______________________
 
 La PROCEDURE
 
-permet d'éxecuté une séquence d'instruction lors de son appel,  
+permet d'exécuté une séquence d'instruction lors de son appel,  
 
-une procedure a toujours un identificateur ( son nom ), des conditions d'utilisation propre a elle meme, 
-eventuellement des paramètres ( des sortes d'ingrédients a lui fournir en amont, avec lesquels elle va travailler )
-on pourrait interpreter la liste de ses paramètres comme un "guichet" de communication entre le monde exterieur et l'interieur du sous-programme (portés des variables)
+une procédure a toujours un identificateur ( son nom ), des conditions d'utilisation propre à elle-même, 
+Éventuellement des paramètres ( des sortes d'ingrédients ont lui fourni en amont, avec lequel elle va travailler )
+on pourrait interpréter la liste de ses paramètres comme un "guichet" de communication entre le monde extérieur et l'intérieur du sous-programme (porté des variables)
 
-elle produit eventuellement un résultat
+elle produit éventuellement un résultat
 
-elle sert a "mettre en facteur" du code, s'est a dire permettre d'écrire une seule fois une séquence d'instructions souvent utilisée.
-cette séquence d'instructions s'executera quand la procedure sera appelé,
+elle sert à "mettre en facteurs" du code, c'est-à-dire permettre d'écrire une seule fois une séquence d'instructions souvent utilisée.
+cette séquence d'instructions s'exécutera quand la procédure sera appelée,
 
 ```
 Exemple :
@@ -41,7 +41,7 @@ Exemple :
 
 ```
 
-la procedure permet de remplacer une suite d'actions élémentaire par une seule action de "haut niveau"
+la procédure permet de remplacer une suite d'actions élémentaire par une seule action de "haut niveau"
 
 par exemple :
 ```
@@ -78,8 +78,8 @@ Exemple d'utilisation :
 . Rac_12 <- sqrt (12.0);
 ```
 
-Le predicat est une fonction qui renvoie un booleen,
-(on choisi un identificateur qui commence par "is"/"has"/"are" (pour est, a, sont) )
+Le prédicat est une fonction qui renvoie un booleen,
+(on choisit un identificateur qui commence par "is"/"has"/"are" (pour est, a, sont) )
 
 ```
 Exemple :
@@ -104,13 +104,13 @@ Le RENVOIE
 
 Le IN
 
-  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce meme marqueur) ne subira pas de modification dans le sous programme
+  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce même marqueur) ne subira pas de modification dans le sous-programme
 
 Le IN_OUT
 
-  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce meme marqueur) pourrait subir une modification dans le sous programme
+  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce même marqueur) pourrait subir une modification dans le sous-programme
 
 Le OUT
 
-  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce meme marqueur) subira une modification obligatoire dans le sous programme
+  Marqueur dans une procedure/fonction signifiant que l'argument désigné (par ce même marqueur) subira une modification obligatoire dans le sous-programme
 
